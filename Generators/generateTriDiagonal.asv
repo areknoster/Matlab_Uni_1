@@ -1,8 +1,0 @@
-function M = createTriDiagonal(R1, R2, R3, I1, I2, I3)
-%CREATETRIDIAGONAL Creates tridiagonal matrix out of six vectors.
-%   a,b,c must be N-1, N, N-1 length vectors respectively. The output
-%   matrix is NxN size.
-len = length 
-
-end
-
