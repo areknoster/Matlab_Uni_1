@@ -1,11 +1,12 @@
-function [R1, R2, R3, I1, I2, I3] = generateRandomVectorSet(N)
+function [S, x] = generateRandomVectorSet(N)
 %GENERATERANDOMVECTORSET Summary of this function goes here
 %   Detailed explanation goes here
-R1 = generateRandomVector(N-1);
-R2 = generateRandomVector(N);
-R3 = generateRandomVector(N-1);
-I1 = generateRandomVector(N-1);
-I2 = generateRandomVector(N);
-I3 = generateRandomVector(N-1);
+S{1} = generateRandomVector(N-1);
+S{2} = generateRandomVector(N);
+S{3} = generateRandomVector(N-1);
+S{4} = generateRandomVector(N-1);
+S{5} = generateRandomVector(N);
+S{6} = generateRandomVector(N-1);
+x =  generateRandomVector(2 * N);
 end
 
