@@ -1,7 +1,8 @@
 function M = generateRandomExample(N, linearDependend)
-%GENERATERANDOMEXAMPLE Summary of this function goes here
-%   Detailed explanation goes here
-[S, x] = generateRandomVectorSet(N);
+%GENERATERANDOMEXAMPLE generates the matrix which is isomorphic to randomly
+%generated NxN sized tridiagonal matrix in complex field. The last column
+%is 
+[S, y] = generateRandomVectorSet(N);
 if nargin == 2 && linearDependend == true
     S{1}([1 2]) = [0;1];
     S{4}([1 2]) = [0;1];
@@ -13,6 +14,6 @@ end
 R = generateTriDiagonal(S{1}, S{2}, S{3});
 I = generateTriDiagonal(S{4}, S{5}, S{6});
 M = [R, -I; I, R];
-M = [M, x];
+M = [M, y];
 end
 
