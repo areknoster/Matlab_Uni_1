@@ -1,6 +1,11 @@
 function [x, elTime] = GEPPv1(M)
-%BASICGEPP Summary of this function goes here
-%   Detailed explanation goes here
+%GEPPV1 does gauss elimination with partial pivoting.
+%   M is 2n x (2n + 1) matrix (the second one will not include
+%   linear system solution in the end)
+%   x is the result vertical vector of 2n size
+%   elTime is the time needed to compute the function.
+%   The algorithm is not optimized for the task. See GEPPv2 for optimized
+%   one.
 tic
 N = size(M, 1);
 p = 1;

@@ -1,4 +1,4 @@
-numberOfSamples = 40;
+numberOfSamples = 10;
 firstMatrixSize = 20;
 increment = 20;
 

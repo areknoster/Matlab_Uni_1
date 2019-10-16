@@ -20,7 +20,7 @@ for i = 2:N+1
     [data{i, 3}, data{i, 4}] = GEPP_function(data{i, 2}); %result and elapsed time
     data{i, 5} = data{i, 4} / (data{i, 1} .^ 3); % elapsed_time/N^3
     data{i, 6} = solution_check(data{i, 2}, data{i, 3}); %actual result error
-    data{i,7} = max(abs(data{i, 5})); % maximal error
+    data{i,7} = max(abs(data{i, 6})); % maximal error
     size = size + increment;
 end
 end

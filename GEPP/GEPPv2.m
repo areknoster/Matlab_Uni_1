@@ -7,7 +7,6 @@ function [x, elTime] = GEPPv2(M)
 %   x is the result vertical vector of 2n size
 %   elTime is the time needed to compute the function.
 %   it is around 50% faster than the version without optimization.
-%   The biggest 
 [N1, N2] = size(M);
 if N1 ~= N2 - 1 || mod(N1, 2) ~= 0 || N1 < 10
    error("Matrix does not fit requirements");
