@@ -2,8 +2,7 @@ function [x, elTime] = GEPPv2(M)
 %GEPPV2 does gauss elimination with partial pivoting, optimized for
 %exercise case - a matrix with three tri-diagonals. The result is the
 %solution of system of linear equations within complex field.
-%   M is 2n x (2n + 1) matrix (the second one will not include
-%   linear system solution in the end)
+%   M is 2n x (2n + 1) matrix
 %   x is the result vertical vector of 2n size
 %   elTime is the time needed to compute the function.
 %   it is around 50% faster than the version without optimization.

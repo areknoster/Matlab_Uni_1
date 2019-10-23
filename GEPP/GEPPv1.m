@@ -1,7 +1,7 @@
 function [x, elTime] = GEPPv1(M)
-%GEPPV1 does gauss elimination with partial pivoting.
-%   M is 2n x (2n + 1) matrix (the second one will not include
-%   linear system solution in the end)
+%GEPPV1 does gauss elimination with partial pivoting, to solve system of
+%linear equations.
+%   M is 2n x (2n + 1) matrix
 %   x is the result vertical vector of 2n size
 %   elTime is the time needed to compute the function.
 %   The algorithm is not optimized for the task. See GEPPv2 for optimized
